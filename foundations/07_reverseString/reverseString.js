@@ -4,10 +4,8 @@ const reverseString = function (str) {
     for (let i = splitString.length - 1; i >= 0; i--) {
         reversedString += splitString[i];
     }
-    console.log(reversedString);
+    return reversedString;
 };
-
-reverseString("This is a test");
 
 // Do not edit below this line
 module.exports = reverseString;
