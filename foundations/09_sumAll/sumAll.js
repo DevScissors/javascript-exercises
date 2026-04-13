@@ -8,7 +8,11 @@ const sumAll = function (num1, num2) {
     let sum = 0;
     const rangeArr = [num1, num2];
     const sortedRangeArr = rangeArr.sort((a, b) => a - b);
-    for (let i = sortedRangeArr[0]; i < sortedRangeArr[1] + 1; i++) {
+
+    const min = sortedRangeArr[0];
+    const max = sortedRangeArr[1];
+
+    for (let i = min; i <= max; i++) {
         sum = sum + i;
     }
     return sum;
